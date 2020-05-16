@@ -9,7 +9,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 
-app.get('/home', (req, res) => {
+app.get('*', (req, res) => {
     res.render('index.html');
 })
 
