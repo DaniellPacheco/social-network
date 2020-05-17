@@ -1,18 +1,22 @@
 module.exports = {
     mode: "production",
-  
+    entry: './src/index.tsx',
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
   
+    output: {
+      path: __dirname + '/public/js/'
+    },
+
     resolve: {
       // Add '.ts' and '.tsx' as resolvable extensions.
-      extensions: [".ts", ".tsx"]
+      extensions: [".ts", ".tsx", ".js"]
     },
   
     module: {
       rules: [
         {
-          test: /\.ts(x?)$/,
+          test: /(\.ts(x?))|(\.js(x?))$/,
           exclude: /node_modules/,
           use: [
             {

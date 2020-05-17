@@ -18,7 +18,7 @@ class Login extends React.Component {
                         <label htmlFor="senha">
                             <input type="password" name="senha" placeholder="6+ Digitos"/>
                         </label>
-                        <a href="#">Esqueci a senha!</a>
+                        <a href="">Esqueci a senha!</a>
                         <button type="submit">Entrar no Lumus</button>
                     </form>
                 </div>

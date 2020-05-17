@@ -1,10 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { Hello } from "./components/Hello";
-import Login from "./components/login";
+import { BrowserRouter } from 'react-router-dom';
+import App from './components/app';
 
 ReactDOM.render(
-  <Hello compiler="TypeScript" framework="React" />,
-  document.getElementById("example")
+    <BrowserRouter>
+      <React.StrictMode>
+        <App></App>
+      </React.StrictMode>
+    </BrowserRouter>,
+  document.getElementById('root')
 );
