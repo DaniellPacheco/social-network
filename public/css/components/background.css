@@ -1,0 +1,13 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: var(--first-color);
+    background-image: url("../../img/back-login.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: var(--third-color);
+}

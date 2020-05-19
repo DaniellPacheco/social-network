@@ -1,26 +1,4 @@
-:root {
-    --first-color: #18191A;
-    --second-color: #242526;
-    --third-color: #fff;
-    --fourth-color: #3A3B3C;
-    --fifth-color: #808080;
-    --sixth-color: #FFC107;
-}
-
-
-.background {
-    width: 100vw;
-    height: 100vh;
-    background: var(--first-color);
-    background-image: url("../img/back-login.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    color: var(--third-color);
-}
+/* Positioning Login Screen, Register Screen */
 
 .login-wrap {
     width: 1200px;
@@ -41,48 +19,56 @@
     flex-direction: column;
 }
 
+/* Div Left */
+
 .login-inner:first-child {
     justify-content: center;
 }
+
+/* Div Right */
 
 .login-inner:last-child {
     background: var(--second-color);
 }
 
-.login-inner > form {
+.form-wrap {
     width: 481px;
-    /* border: 1px solid red; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-.logo, h1, .input-field, a, button {
+
+
+.logo, .title , .input-field, .input-link, .form-button {
     margin-top: 30px;
 }
 
-form > h1 {
+.title {
     color: var(--third-color);
-    font-size: 28px;
+    font-size: var(--first-title);
 }
 
-.title {
+.subtitle {
     font-weight: bold;
 }
+
+.subtitle:hover {
+    color: var(--sixth-color);
+}
+
+/* Input Configuration */
 
 .input-field {
     display: flex;
     flex-direction: column;
 }
 
-
 .input-title {
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 5px;
 }
-
-
 
 .input-item {
     width: 480px;
@@ -94,7 +80,7 @@ form > h1 {
     border-radius: 4px;
 }
 
-.input-field > .input-item:focus {
+.input-item:focus {
     outline: 0;
     border: 1px solid var(--sixth-color);
 }
@@ -105,31 +91,35 @@ form > h1 {
     opacity: 0.4;
 }
 
-.half {
-    width: 250px;
+/* Configuration Input Half */
+
+.input-field-half {
+    display: flex;
+    margin-top: 30px
 }
 
-.form-wrap > a {
+.field-half {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.input-half {
+    width: 230px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+/* Link Configuration */
+
+.input-link {
     color: var(--third-color);
     text-decoration: none;
 }
 
-.form-wrap > a:hover {
+.input-link:hover {
     opacity: 0.5;
 }
 
-.form-wrap > button {
-    background: var(--sixth-color);
-    width: 230px;
-    height: 45px;
-    border-radius: 4px;
-    border: none;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.form-wrap > button:hover {
-    background: none;
-    border: 1px solid var(--sixth-color);
-    color: var(--sixth-color);
-}

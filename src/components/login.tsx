@@ -5,7 +5,6 @@ class Login extends React.Component {
     render() {
         return(
             <section className="background">
-                {/* <img src="img/back-login.png" alt=""/> */}
                 <div className="login-wrap">
                     <div className="login-inner">
                         <img src="img/img-login.svg" alt=""/>
@@ -15,18 +14,18 @@ class Login extends React.Component {
                             <a href="/">
                                 <img className="logo" src="img/logo.svg" alt="Logo Cloud"/>
                             </a>
-                            <h1>Entrar na <span className="title">Cloud</span></h1>
+                            <h1 className="title">Entrar na <span className="subtitle">Cloud</span></h1>
                             <fieldset className="input-field">
-                                <label htmlFor="email">Endereço de E-mail</label>
-                                <input type="email" name="email" id=""/>
+                                <label className="input-title" htmlFor="email">Endereço de E-mail</label>
+                                <input className="input-item" type="email" name="email" placeholder="email@example.com"/>
                             </fieldset>
                             <fieldset className="input-field">
-                                <label htmlFor="senha">Senha</label>
-                                <input type="password" name="senha" placeholder="6+ Digitos"/>
+                                <label className="input-title" htmlFor="senha">Senha</label>
+                                <input className="input-item" type="password" name="senha" placeholder="6+ Digitos"/>
                             </fieldset>
-                            <a href="/">Esqueci a senha!</a>
-                            <a href="/">Ainda não possuo conta!</a>
-                            <button type="submit">Entrar no Lumus</button>
+                            <a className="input-link" href="/">Esqueci a senha!</a>
+                            <a className="input-link" href="/register">Ainda não possuo conta!</a>
+                            <button className="form-button" type="submit">Entrar no Lumus</button>
                         </form>
                     </div>
                 </div>

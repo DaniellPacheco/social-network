@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import Login from "./login";
+import Register from "./register";
 
 class App extends React.Component {
     render() {
@@ -13,6 +14,9 @@ class App extends React.Component {
                 </Route>
                 <Route exact path="/login">
                     <Login />
+                </Route>
+                <Route exact path="/register">
+                  <Register />
                 </Route>
             </Switch>
           </div>
