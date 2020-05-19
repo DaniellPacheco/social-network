@@ -1,0 +1,126 @@
+:root {
+    --first-color: #18191A;
+    --second-color: #242526;
+    --third-color: #fff;
+    --fourth-color: #3A3B3C;
+    --fifth-color: #808080;
+    --sixth-color: #FFC107;
+}
+
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background: var(--first-color);
+    background-image: url("../img/back-login.png");
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: var(--third-color);
+}
+
+.login-wrap {
+    width: 1200px;
+    height: 587;
+    background: var(--first-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+}
+
+.login-inner {
+    width: 600px;
+    height: 587px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-inner:first-child {
+    justify-content: center;
+}
+
+.login-inner:last-child {
+    background: var(--second-color);
+}
+
+.login-inner > form {
+    width: 481px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo, h1, .input-field, a, button {
+    margin-top: 30px;
+}
+
+form > h1 {
+    color: var(--third-color);
+    font-size: 28px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-field > label {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.input-field > input {
+    width: 481px;
+    height: 45px;
+    border: none;
+    background: var(--fourth-color);
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 4px;
+}
+
+.input-field > input:focus {
+    outline: 0;
+    border: 1px solid var(--sixth-color);
+}
+
+::placeholder {
+    color: var(--fifth-color);
+    font-weight: 100;
+    opacity: 0.4;
+}
+
+.form-wrap > a {
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.form-wrap > a:hover {
+    opacity: 0.5;
+}
+
+.form-wrap > button {
+    background: var(--sixth-color);
+    width: 230px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-wrap > button:hover {
+    background: none;
+    border: 1px solid var(--sixth-color);
+    color: var(--sixth-color);
+}
