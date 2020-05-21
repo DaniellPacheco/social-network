@@ -38,8 +38,6 @@
     flex-direction: column;
 }
 
-
-
 .logo, .title , .input-field, .input-link, .form-button {
     margin-top: 30px;
 }

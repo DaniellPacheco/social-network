@@ -10,6 +10,7 @@ class App extends React.Component {
           <div className="container">
             <Switch>
                 <Route exact path="/">
+                    <img src="img/logo.svg"/>
                     <h1>Home</h1>
                 </Route>
                 <Route exact path="/login">

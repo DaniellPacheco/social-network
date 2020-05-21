@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 class Login extends React.Component {
 
@@ -11,9 +12,9 @@ class Login extends React.Component {
                     </div>
                     <div className="login-inner">
                         <form action="" method="POST" className="form-wrap">
-                            <a href="/">
+                            <Link to="/">
                                 <img className="logo" src="img/logo.svg" alt="Logo Cloud"/>
-                            </a>
+                            </Link>
                             <h1 className="title">Entrar na <span className="subtitle">Cloud</span></h1>
                             <fieldset className="input-field">
                                 <label className="input-title" htmlFor="email">Endereço de E-mail</label>
@@ -23,8 +24,8 @@ class Login extends React.Component {
                                 <label className="input-title" htmlFor="senha">Senha</label>
                                 <input className="input-item" type="password" name="senha" placeholder="6+ Digitos"/>
                             </fieldset>
-                            <a className="input-link" href="/">Esqueci a senha!</a>
-                            <a className="input-link" href="/register">Ainda não possuo conta!</a>
+                            <Link className="input-link" to="/">Esqueci a senha!</Link>
+                            <Link className="input-link" to="/register">Ainda não possuo conta!</Link>
                             <button className="form-button" type="submit">Entrar no Lumus</button>
                         </form>
                     </div>
