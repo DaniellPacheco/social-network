@@ -1,32 +1,32 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
 class Login extends React.Component {
 
     render() {
         return(
             <section className="background">
-                {/* <img src="img/back-login.png" alt=""/> */}
                 <div className="login-wrap">
                     <div className="login-inner">
                         <img src="img/img-login.svg" alt=""/>
                     </div>
                     <div className="login-inner">
                         <form action="" method="POST" className="form-wrap">
-                            <a href="/">
+                            <Link to="/">
                                 <img className="logo" src="img/logo.svg" alt="Logo Cloud"/>
-                            </a>
-                            <h1>Entrar na <span className="title">Cloud</span></h1>
+                            </Link>
+                            <h1 className="title">Entrar na <span className="subtitle">Cloud</span></h1>
                             <fieldset className="input-field">
-                                <label htmlFor="email">Endereço de E-mail</label>
-                                <input type="email" name="email" id=""/>
+                                <label className="input-title" htmlFor="email">Endereço de E-mail</label>
+                                <input className="input-item" type="email" name="email" placeholder="email@example.com"/>
                             </fieldset>
                             <fieldset className="input-field">
-                                <label htmlFor="senha">Senha</label>
-                                <input type="password" name="senha" placeholder="6+ Digitos"/>
+                                <label className="input-title" htmlFor="senha">Senha</label>
+                                <input className="input-item" type="password" name="senha" placeholder="6+ Digitos"/>
                             </fieldset>
-                            <a href="/">Esqueci a senha!</a>
-                            <a href="/">Ainda não possuo conta!</a>
-                            <button type="submit">Entrar no Lumus</button>
+                            <Link className="input-link" to="/">Esqueci a senha!</Link>
+                            <Link className="input-link" to="/register">Ainda não possuo conta!</Link>
+                            <button className="form-button" type="submit">Entrar no Lumus</button>
                         </form>
                     </div>
                 </div>

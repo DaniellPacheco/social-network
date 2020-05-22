@@ -1,0 +1,16 @@
+/* Form Button */
+.form-button {
+    background: var(--sixth-color);
+    width: 230px;
+    height: 45px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.form-button:hover {
+    background: none;
+    border: 1px solid var(--sixth-color);
+    color: var(--sixth-color);
+}
