@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
 import Login from "./login";
 import Register from "./register";
+import ForgetPassword from './forget_password';
 
 class App extends React.Component {
     render() {
@@ -18,6 +19,9 @@ class App extends React.Component {
                 </Route>
                 <Route exact path="/register">
                   <Register />
+                </Route>
+                <Route exact path="/forget-password">
+                  <ForgetPassword />
                 </Route>
             </Switch>
           </div>

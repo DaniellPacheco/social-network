@@ -38,6 +38,12 @@
     flex-direction: column;
 }
 
+.form-wrap-forgetpass {
+    width: 600px;
+    height: 350px;
+    background-color: var(--second-color);
+}
+
 .logo, .title , .input-field, .input-link, .form-button {
     margin-top: 30px;
 }
@@ -120,4 +126,3 @@
 .input-link:hover {
     opacity: 0.5;
 }
-
