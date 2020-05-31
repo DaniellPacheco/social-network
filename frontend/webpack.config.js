@@ -1,11 +1,12 @@
 module.exports = {
     mode: "production",
     entry: './src/index.tsx',
+    watch: true,
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
   
     output: {
-      path: __dirname + '/public/js/'
+      path: __dirname + '/public/js'
     },
 
     resolve: {
